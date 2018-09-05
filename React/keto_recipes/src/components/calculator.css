@@ -1,0 +1,18 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #525252;
+  height: auto;
+  color: white;
+}
+
+button {
+  width: auto;
+  background-color: #75db00;
+  font-size: 2em;
+  border-radius: 10px;
+  padding: .5em;
+}

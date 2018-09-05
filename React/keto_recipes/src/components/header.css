@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url(./cover.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header > h1 {
+  font-size: 4em;
+  margin-bottom: -.3em;
+}
+
+header > p {
+  font-size: 1.5em;
+}

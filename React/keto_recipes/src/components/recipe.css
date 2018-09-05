@@ -1,0 +1,22 @@
+recipe-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 400px;
+  padding: .3em;
+  margin: 1em;
+  background-color: white;
+  border-radius: 10px;
+  border:1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+recipe-card > h3 {
+  color: gray;
+  padding-left: 1em;
+}
+
+recipe-card > div {
+  padding-left: 2em;
+  color: black;
+}
