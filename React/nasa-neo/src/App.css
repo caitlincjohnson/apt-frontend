@@ -26,3 +26,42 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+body {
+  display: flex;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  background-color: #19214d;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  object-fit: scale-down;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.parent {
+  position: absolute;
+  left: 50%;
+}
+
+.asteroid {
+  position: relative;
+  height: 100px;
+  width: auto;
+  top: 100px;
+  left: 300px;
+  transform: rotate(-70deg);
+  animation: asteroid-spinner infinite .5s;
+}
+
+@keyframes asteroid-spinner {
+  0%   {transform: rotate(-70deg);}
+  25%  {transform: rotate(-60deg);}
+  50%  {transform: rotate(-80deg);}
+  75%  {transform: rotate(-60deg);}
+  100% {transform: rotate(-70deg);}
+}

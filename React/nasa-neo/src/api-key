@@ -1,0 +1,1 @@
+curl  "https://api.nasa.gov/neo/rest/v1/feed?start_date=2018-09-05&end_date=2018-09-05&api_key=9tZbncoaxinLttuoH7EeM6dAldjk9fzDwLhuodYM" > sample-neo.js
