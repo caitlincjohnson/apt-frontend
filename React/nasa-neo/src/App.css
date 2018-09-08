@@ -1,3 +1,20 @@
+body {
+  font-family: 'VT323', monospace;
+  font-size: 2em;
+  color: white;
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+
+.Title-h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  color: #ff9933;
+  text-shadow: 5px 5px black;
+}
+
 .App {
   text-align: center;
 }
@@ -8,10 +25,8 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
 }
 
 .App-title {
@@ -45,23 +60,83 @@ body {
 
 .parent {
   position: absolute;
-  left: 50%;
 }
 
-.asteroid {
+asteroid {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  animation: slideInFromTop 1.5s;
+}
+
+asteroid-details {
   position: relative;
+  top: -1em;
+  left: 7em;
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  animation: fadeInFromNone ease 1.5s;
+}
+
+.asteroid-img {
+  position: absolute;
   height: 100px;
   width: auto;
-  top: 100px;
-  left: 300px;
   transform: rotate(-70deg);
   animation: asteroid-spinner infinite .5s;
 }
 
+.asteroid-img2 {
+  position: absolute;
+  height: 100px;
+  width: auto;
+  transform: rotate(-70deg);
+  animation: asteroid-spinner infinite .5s;
+}
+
+.earth-img {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  clip: rect(0px,1000px,300px,0px);
+}
+
 @keyframes asteroid-spinner {
-  0%   {transform: rotate(-70deg);}
-  25%  {transform: rotate(-60deg);}
-  50%  {transform: rotate(-80deg);}
-  75%  {transform: rotate(-60deg);}
-  100% {transform: rotate(-70deg);}
+  0%   {
+    transform: rotate(-70deg);
+  }
+  50%  {
+    transform: rotate(-75deg);
+  }
+  100% {
+    transform: rotate(-65deg);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: flex;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+    }
 }
